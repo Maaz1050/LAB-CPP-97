@@ -2,21 +2,26 @@
 using namespace std;
 class Shape 
 {
-    public:
+public:
+
 int area(int s) 
 { 
+    cout<<"I am From Class\n";
 return(s*s); 
 } 
 int area(int l,int b) 
 { 
+     cout<<"I am From Class\n";
 return(l*b); 
 } 
 float area(float r) 
 { 
+     cout<<"I am From Class\n";
 return(3.14*r*r); 
 } 
 float area(float bs,float ht) 
 { 
+     cout<<"I am From Class\n";
 return((bs*ht)/2); 
 }
     
@@ -26,7 +31,7 @@ int area(int,int);
 float area(float); 
 float area(float,float); 
 
-int main() 
+int main( 
 { 
 int s,l,b; 
 float r,bs,ht; 
