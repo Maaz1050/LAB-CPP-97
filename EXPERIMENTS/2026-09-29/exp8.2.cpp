@@ -14,7 +14,7 @@ this->feet = f;
 this->inch = i; 
 } 
 // Overloading (+) operator to perform addition of two distance object Call by reference 
-Distance operator+(Distance& d2) 
+Distance operator-(Distance& d2) 
 { 
 // Create an object to return 
 Distance d3; 
@@ -29,10 +29,11 @@ int main()
 { 
 Distance d1(8, 9);
 Distance d2(10, 2); 
-Distance d3; 
+Distance d3=d1-d2; 
 // Use overloaded operator 
-d3 = d1 + d2; 
-cout << "\nTotal Feet & Inches: \n" << 
+d3 = d1 - d2; 
+cout << "\nTotal Feet & Inches: " << 
 d3.feet << "'" << d3.inch; 
+cout<<"\n"<<endl;
 return 0; 
 }
